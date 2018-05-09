@@ -1,6 +1,6 @@
 #[macro_use] extern crate cpython;
 
-use cpython::{PyResult, Python, PyDict, PyIterator, ToPyObject, PyObject};
+use cpython::{PyResult, Python, PyDict};
 
 py_module_initializer!(hello_rust, inithello_rust, PyInit_hello_rust, |py, m| {
     try!(m.add(py, "__doc__", "This module is implemented in Rust."));
