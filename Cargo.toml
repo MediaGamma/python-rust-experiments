@@ -1,0 +1,12 @@
+[package]
+name = "rust_python"
+version = "0.1.0"
+authors = ["Tom Marks <thomas.o.marks@gmail.com>"]
+
+[lib]
+name = "rust2py"
+crate-type = ["cdylib"]
+
+[dependencies.cpython]
+version = "0.1"
+features = ["extension-module"]
